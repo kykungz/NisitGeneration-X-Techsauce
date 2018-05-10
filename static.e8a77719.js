@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "//";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 9);
@@ -1238,9 +1238,11 @@ var _ngLogo2 = _interopRequireDefault(_ngLogo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BG = _styledComponents2.default.div.withConfig({
+var BG = _styledComponents2.default.img.attrs({
+  src: _homebg2.default
+}).withConfig({
   displayName: 'Hero__BG'
-})(['background:url(', ') no-repeat center;position:absolute;left:0;top:0;width:100vw;'], _homebg2.default);
+})(['background:url(', ') no-repeat center;position:absolute;left:0;top:0;width:100vw;min-width:1200px;height:auto;z-index:-1;'], _homebg2.default);
 
 var Full = _styledComponents2.default.div.withConfig({
   displayName: 'Hero__Full'
@@ -1848,4 +1850,4 @@ module.exports = require("hamburgers/dist/hamburgers.min.css");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.2baaee19.js.map
+//# sourceMappingURL=static.e8a77719.js.map
