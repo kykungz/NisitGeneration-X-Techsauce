@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
+  siteRoot: process.NODE_ENV === 'production'
+    ? 'https://kykungz.github.io/NisitGeneration-X-Techsauce'
+    : '/',
   getSiteData: () => ({
     title: 'React Static',
   }),
@@ -30,6 +33,7 @@ export default {
       return (
         <Html>
           <Head>
+            <title>Nisit Generation</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             {renderMeta.styleTags}

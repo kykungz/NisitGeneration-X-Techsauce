@@ -17,3 +17,8 @@ if (typeof document !== 'undefined') {
   // Render!
   render(App)
 }
+
+if (process.env.NODE_ENV !== 'production') {
+  const { whyDidYouUpdate } = require('why-did-you-update')
+  whyDidYouUpdate(React)
+}
