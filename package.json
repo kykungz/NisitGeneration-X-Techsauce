@@ -10,7 +10,7 @@
     "build": "react-static build",
     "serve": "serve dist -p 3000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "axios": "^0.16.2",
