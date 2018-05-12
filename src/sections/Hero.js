@@ -29,7 +29,7 @@ const Full = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em;
+  padding: 1em;
   padding-top: 3em;
 `
 
@@ -39,7 +39,7 @@ const Logo = styled.img`
   transition: all 300ms;
 
   @media (max-width: 780px) {
-    max-width: 200px;
+    max-width: 180px;
     width: 100%;
   }
 
@@ -54,16 +54,15 @@ const Company = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em;
-
-  @media (max-width: 780px) {
-    flex-direction: column;
-  }
 `
 
 const X = styled.span`
   color: white;
   font-size: 50px;
   padding: 0 1em 10px 1em;
+  @media (max-width: 780px) {
+    padding: 0 .5em 10px .5em;
+  }
 `
 
 const Detail = styled.div`

@@ -1,10 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
+const facebook = `
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+`
+
 export default {
-  siteRoot: process.NODE_ENV === 'production'
-    ? 'https://kykungz.github.io/NisitGeneration-X-Techsauce'
-    : '/',
   getSiteData: () => ({
     title: 'React Static',
   }),
@@ -38,7 +45,13 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             {renderMeta.styleTags}
           </Head>
-          <Body>{children}</Body>
+          <Body>
+            <Fragment>
+              <div id="fb-root" />
+              <script dangerouslySetInnerHTML={{ __html: facebook }} />
+              {children}
+            </Fragment>
+          </Body>
         </Html>
       )
     }

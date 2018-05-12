@@ -28,10 +28,10 @@ const Content = styled.div`
 `
 
 const Line = styled.div`
-margin: 25px 0;
-height: 2px;
-background: #eeeeee;
-background: linear-gradient(to right, rgba(0,0,0,0), #eeeeee, rgba(0,0,0,0));
+  margin: 25px 0;
+  height: 2px;
+  background: #eeeeee;
+  background: linear-gradient(to right, rgba(0,0,0,0), #eeeeee, rgba(0,0,0,0));
 `
 
 const Title = styled.h1`
@@ -80,12 +80,12 @@ const Buy = styled.span`
 const Price = () => (
   <Wrapper>
     <Content>
-      <Title>PRICE</Title>
+      <Title>TICKET</Title>
       <Line />
       <Grid>
         <Detail>
           <p>
-            น็อค สปอตวานิลารัม โนติสพาวเวอร์ น้องใหม่ มายองเนสแจมมาราธอนแฮมเบอร์เกอร์ นู้ดโหลนแมชีนปัจเจกชน แชมเปญแพลนวโรกาสดีพาร์ทเมนต์ แพ็คชัวร์ ล็อบบี้แรงผลักฮันนีมูน บ๋อยยูโรไมค์แคมเปญ เอ๋อวัจนะ ซื่อบื้อว่ะ ปูอัด
+            น็อค สปอตวานิลารัม โนติสพาวเวอร์ น้องใหม่ มายองเนสแจมมาราธอนแฮมเบอร์เกอร์ นู้ดโหลนแมชีนปัจเจกชน แชมเปญแพลนวโรกาสดีพาร์ทเมนต์ แพ็คชัวร์ ล็อบบี้แรงผลักฮันนีมูน บ๋อยยูโรไมค์แคมเปญ เอ๋อวัจนะ ปูอัด
           </p>
         </Detail>
         <Sale>

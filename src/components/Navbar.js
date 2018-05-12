@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 import styled, { injectGlobal } from 'styled-components'
-import Button from './Button'
-import Hamburger from './Hamburger'
-// import OverlayMenu from '../containers/OverlayMenu'
+import { Link } from 'react-scroll'
 import logo from '../assets/ng-logo.png'
+import menus from '../data/menus'
+import HamburgerButton from './Hamburger'
 
 injectGlobal`
   .highlight {
     background: rgba(0,0,0,0.6) !important;
-    ${'' /* a {
-      font-size: 18px !important;
-    } */}
   }
 `
 
 const Wrapper = styled.div.attrs({
-  id: 'navbar'
+  id: 'navbar',
 })`
   z-index: 99;
   margin: auto;
@@ -31,7 +28,6 @@ const Nav = styled.nav`
   max-width: 1200px;
   display: flex;
   box-sizing: border-box;
-  padding: 0 1em;
   align-items: center;
   margin: auto;
 `
@@ -42,14 +38,11 @@ const Menu = styled.ul`
   padding: 0;
   overflow: hidden;
   text-align: right;
-
-  @media (max-width: 780px) {
-    display: none;
-  }
 `
 
 const Item = styled.li`
   float: left;
+  cursor: pointer;
 
   a {
     display: block;
@@ -73,7 +66,7 @@ const Item = styled.li`
 `
 
 const Brand = styled.img`
-  padding: .5em 0;
+  padding: .5em 1em;
   height: 50px;
   transition: all 300ms;
 
@@ -89,29 +82,23 @@ const Right = styled.div`
 
 const Collapse = styled.div`
   display: flex;
-  @media (max-width: 780px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `
 
-const OnSmall = styled.div`
+const Hamburger = styled.div`
   display: none;
-  @media (max-width: 780px) {
+  @media (max-width: 800px) {
     display: block;
   }
 `
 
-const menus = [
-  { name: 'HOME', href: '/home' },
-  { name: 'TIMELINE', href: '/news' },
-  { name: 'SPEAKERS', href: '/contact' },
-  { name: 'STAGES', href: '/about' },
-  { name: 'ABOUT US', href: '/about' },
-]
-
 class Navbar extends Component {
   componentDidMount () {
+    console.log('mounted')
     const alterNavbar = () => {
+      console.log('scrolling')
       if (window.scrollY > 150) {
         document.getElementById('navbar').classList.add('highlight')
       } else {
@@ -132,15 +119,16 @@ class Navbar extends Component {
               <Menu>
                 {menus.map(menu => (
                   <Item key={menu.name}>
-                    <a href={menu.href}>{menu.name}</a>
+                    <Link to={menu.target} spy smooth offset={menu.offset} duration={500}>
+                      {menu.name}
+                    </Link>
                   </Item>
                 ))}
               </Menu>
-              <Button>GET TICKET</Button>
             </Collapse>
-            {/* <OnSmall>
-              <Hamburger />
-            </OnSmall> */}
+            <Hamburger>
+              <HamburgerButton onClick={this.props.onHamburgerClick} />
+            </Hamburger>
           </Right>
         </Nav>
       </Wrapper>

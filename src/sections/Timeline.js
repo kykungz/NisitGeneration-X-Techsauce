@@ -26,10 +26,12 @@ const List = styled.div`
   flex-wrap: wrap;
 `
 
-const Text = styled.h4`
+const Text = styled.h3`
   text-align: center;
   margin: 0;
   line-height: 2rem;
+  ${'' /* font-family: sans-serif; */}
+  font-weight: normal
 `
 
 const Content = styled.div`
@@ -57,22 +59,22 @@ const Timeline = () => (
       <Content>
         <Circle />
         <Detail>
-          <Text>Registeration</Text>
-          <Text>NOW &mdash; JUNE 8</Text>
+          <Text>กรอกใบสมัคร</Text>
+          <Text>วันนี้ &mdash; 8 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
         <Circle />
         <Detail>
-          <Text>Announcement</Text>
-          <Text>JUNE 10</Text>
+          <Text>ประกาศผู้มีสิทธิเข้าร่วมงาน</Text>
+          <Text>10 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
         <Circle />
         <Detail>
-          <Text>Transfer Fee</Text>
-          <Text>JUNE 15</Text>
+          <Text>ชำระเงินค่าเข้าร่วม</Text>
+          <Text>ภายใน 15 มิถุนายน 2561</Text>
         </Detail>
       </Content>
     </List>
