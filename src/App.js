@@ -41,6 +41,12 @@ class App extends Component {
   handleClick = () => {
     this.setState({
       sidebar: !this.state.sidebar,
+    }, () => {
+      if (this.state.sidebar) {
+        document.getElementById('hamburger').classList.add('is-active')
+      } else {
+        document.getElementById('hamburger').classList.remove('is-active')
+      }
     })
   }
 

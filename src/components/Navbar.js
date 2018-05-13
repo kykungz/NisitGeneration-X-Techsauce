@@ -7,7 +7,7 @@ import HamburgerButton from './Hamburger'
 
 injectGlobal`
   .highlight {
-    background: rgba(0,0,0,0.6) !important;
+    background: rgba(0,0,0,0.8) !important;
   }
 `
 
@@ -96,9 +96,7 @@ const Hamburger = styled.div`
 
 class Navbar extends Component {
   componentDidMount () {
-    console.log('mounted')
     const alterNavbar = () => {
-      console.log('scrolling')
       if (window.scrollY > 150) {
         document.getElementById('navbar').classList.add('highlight')
       } else {

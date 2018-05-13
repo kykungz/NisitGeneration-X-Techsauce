@@ -14,7 +14,9 @@ const White = styled.span`
   border: solid white thin;
 `
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  id: 'hamburger',
+})`
   border: none;
   outline: none;
 `
