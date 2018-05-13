@@ -60,8 +60,10 @@ const X = styled.span`
   color: white;
   font-size: 50px;
   padding: 0 1em 10px 1em;
+  font-family: sans-serif;
   @media (max-width: 780px) {
     padding: 0 .5em 10px .5em;
+    font-size: 40px;
   }
 `
 
