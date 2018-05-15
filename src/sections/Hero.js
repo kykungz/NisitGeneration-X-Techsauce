@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 import background from '../assets/homebg2.jpg'
 import tsLogo from '../assets/ts-logo-sq.png'
 import ngLogo from '../assets/ng-logo.png'
+import Button from '../components/Button'
 
 const Full = styled.div`
   background-image:
@@ -71,8 +73,14 @@ const Detail = styled.div`
   text-align: center;
 `
 
-const Special = styled.h3`
+const Special = styled.span`
+  font-size: 28px;
+  font-family: 'Kanit', sans-serif;
   color: #fcb03a;
+`
+
+const Place = styled.h2`
+  margin-top: 0;
 `
 
 const Hero = () => (
@@ -83,10 +91,13 @@ const Hero = () => (
       <Logo src={ngLogo} />
     </Company>
     <Detail>
-      <h1>JUNE 22 - 23, 2018</h1>
-      <h2>CENTARA GRAND AT CENTRAL WORLD</h2>
-      {/* <h1><del>4800</del> 800</h1> */}
-      <Special>STUDENT PRICE BY NISIT GENERATION</Special>
+      <h1>22 - 23 มิถุนายน 2018</h1>
+      <Place>CENTARA GRAND AT CENTRAL WORLD</Place>
+      <Button padding=".5em 1.5em" outline>
+        <Link to="ticket" spy smooth offset={-100} duration={500}>
+          <Special>สมัครเลย!!</Special>
+        </Link>
+      </Button>
     </Detail>
   </Full>
 )

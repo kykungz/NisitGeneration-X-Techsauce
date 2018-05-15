@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space } from 'styled-system'
 
 const Yellow = styled.button`
-  background-color: #fcb03a;
+  background-color: ${props => !props.outline ? '#fcb03a' : 'rgba(0,0,0,0.5)'};
+  border: ${props => props.outline ? 'thin solid #fcb03a' : 'none'};
   color: black;
   font-size: 1em;
   font-weight: bold;
-  border: none;
   outline: none;
   cursor: pointer;
   transition: all 300ms;
@@ -19,8 +18,18 @@ const Yellow = styled.button`
   }
 `
 
-const Button = ({ padding, onClick, children }) => (
-  <Yellow padding={padding} onClick={onClick}>{ children }</Yellow>
-)
+const Button = props => {
+  const {
+    outline,
+    padding,
+    onClick,
+    children,
+  } = props
+  return (
+    <Yellow outline={outline} padding={padding} onClick={onClick}>
+      { children }
+    </Yellow>
+  )
+}
 
 export default Button
