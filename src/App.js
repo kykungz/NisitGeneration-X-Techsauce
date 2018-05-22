@@ -4,8 +4,8 @@ import { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 import Sidebar from 'react-sidebar'
-import SidebarContent from './sections/SidebarContent'
 
+import SidebarContent from './sections/SidebarContent'
 import Navbar from './components/Navbar'
 
 injectGlobal`
@@ -53,6 +53,12 @@ class App extends Component {
   close = () => {
     this.setState({
       sidebar: false,
+    }, () => {
+      if (this.state.sidebar) {
+        document.getElementById('hamburger').classList.add('is-active')
+      } else {
+        document.getElementById('hamburger').classList.remove('is-active')
+      }
     })
   }
 

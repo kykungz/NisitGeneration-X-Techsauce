@@ -72,7 +72,7 @@ const Techsauce = () => (
       <p>
         ซาฟารีสเปคสตีล แอร์เทรดอิสรชนรีไซเคิลดีพาร์ตเมนท์ เทรลเล่อร์คอมเมนท์เวิร์ก โอเปอเรเตอร์ คอลเล็กชั่นตัวตน โปรเจกต์ ออโต้เตี๊ยมอุตสาหการจิตเภท สลัมมิลค์ ใช้งาน แคร์แอโรบิค﻿กรรมาชนแบตฮันนีมูน กู๋เทอร์โบคันยิ แม่ค้าเซอร์ตรวจทานแจ็กเก็ตอุปนายิกา คอนเซ็ปต์แดนเซอร์เทรนด์ สไตรค์โกะถ่ายทำราสเบอร์รีเฮอร์ริเคน มาม่าเอ๋เย้วฟลุก ต้าอ่วยอัลมอนด์เอเซียเทวาธิราชอุปัทวเหตุ
       </p> */}
-      <p>
+      {/* <p>
         ‘The Largest and Sexiest Global Tech Conferences in South East Asia’
       </p>
       <p>
@@ -85,6 +85,27 @@ const Techsauce = () => (
         ทาง Techsauce จัดงานนี้เป็นปีที่ 3<br/>
         จะจัดขึ้นวันที่ 22 - 23 มื.ย.2561<br/>
         ณ Centara Grand and Bangkok Convention Centre, Central world
+      </p> */}
+      <p>
+        ‘The Largest and Sexiest Global Tech Conferences in South East Asia’
+      </p>
+      <p>
+        เป็นการรวมตัวครั้งยิ่งใหญ่ของคนในวงการ Tech ไม่ว่าจะเป็นบริษัทนักลงทุน องค์กรระดับโลก และ Startup จากทั่วโลก
+      </p>
+      <p>
+        Speakers กว่า 200 คน บน 8 เวที ที่จัดเต็มด้วยคุณภาพเน้นๆ ตั้งแต่ CEO และนักลงทุน ไปจนถึง ผู้เชี่ยวชาญสายเทคโนโลยีต่างๆ ที่มาร่วมแชร์ความรู้ ประสบการณ์ และวิธีคิด ทั้ง Brett King, Vitaly M. Golomb จาก HP Tech Ventures, Mike Peng จาก IDEO Tokyo, Kei Shimada จาก Dentsu Japan, Hiroshi Saijo จาก Yamaha Motor Ventures & Laboratory Silicon Valley รวมถึง Roy Teo จาก MAS Singapore และ Alvin Ng จาก GE Capital ซึ่งเป็นเพียงแค่ส่วนหนึ่งเท่านั้น!
+      </p>
+      <p>
+        เป็นงานที่นักศึกษาจะได้เห็นภาพว่าโลกธุรกิจปัจจุบันนั้นเป็นอย่างไร
+      </p>
+      <p>
+        ทาง Techsauce จัดงานนี้เป็นปีที่ 3<br/>
+        จะจัดขึ้นวันที่ 22 - 23 มื.ย.2561<br/>
+        ณ Centara Grand and Bangkok Convention Centre, Central world
+      </p>
+      <p>
+        อ่านเพิ่มเติม :<br/>
+        https://techsauce.co/events/techsauce-global-summit-2018/
       </p>
     </Detail>
     <Infographic>

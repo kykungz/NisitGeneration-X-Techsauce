@@ -26,7 +26,7 @@ const Full = styled.div`
   background-position: center;
   box-sizing: border-box;
   min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
