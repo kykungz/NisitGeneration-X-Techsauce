@@ -121,6 +121,7 @@ const Price = () => (
         <Sale>
           <Full><del>4,800 บาท</del></Full>
           <Promotion>800 บาท</Promotion>
+          <span style={{ fontSize: '16px', color: 'white', marginTop: '-100px' }}>*จำนวนจำกัดเพียง 100 ใบ</span>
         </Sale>
       </Grid>
       <Line />

@@ -5,7 +5,7 @@ import Info from '../sections/Info'
 import Timeline from '../sections/Timeline'
 import SpeakerList from '../sections/SpeakerList'
 import Stages from '../sections/Stages'
-import Price from '../sections/Price'
+import Price from '../sections/OldPrice'
 import Map from '../sections/Map'
 import NisitGeneration from '../sections/NisitGeneration'
 import Footer from '../sections/Footer'
@@ -19,7 +19,7 @@ export default () => (
     </Element>
     <Element name="techsauce">
       <Techsauce />
-      <Map />
+      {/* <Map /> */}
     </Element>
     {/* <Info /> */}
     {/* <SpeakerList /> */}
