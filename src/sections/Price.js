@@ -18,8 +18,9 @@ const Wrapper = styled.div`
       rgba(17, 17, 17, 1) 100%
     ),
     url(${background});
-  background-repeat: no-repeat;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 `
 
 const Content = styled.div`

@@ -24,15 +24,17 @@ const Full = styled.div`
     url(${background});
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   box-sizing: border-box;
   min-width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1em;
-  padding-top: 3em;
+  padding: 160px 1em;
+  @media (max-width: 480px) {
+    padding: 120px 1em;
+  }
 `
 
 const Logo = styled.img`
@@ -83,6 +85,13 @@ const Place = styled.h2`
   margin-top: 0;
 `
 
+const Date = styled.h1`
+  @media (max-width: 480px) {
+    padding: 0 .5em 10px .5em;
+    font-size: 40px;
+  }
+`
+
 const Hero = () => (
   <Full>
     <Company>
@@ -91,13 +100,13 @@ const Hero = () => (
       <Logo src={ngLogo} />
     </Company>
     <Detail>
-      <h1>22 - 23 มิถุนายน 2018</h1>
+      <Date>22 - 23 มิถุนายน 2018</Date>
       <Place>CENTARA GRAND AT CENTRAL WORLD</Place>
-      <Button padding=".5em 1.5em" outline>
-        <Link to="ticket" spy smooth offset={-100} duration={500}>
+      <Link to="ticket" spy smooth offset={-100} duration={500}>
+        <Button padding=".5em 1.5em" outline>
           <Special>สมัครเลย!!</Special>
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </Detail>
   </Full>
 )

@@ -14,6 +14,9 @@ const Center = styled.div`
     url(${background});
   background-repeat: no-repeat;
   background-position: center, center -120px;
+  ${'' /* background-repeat: no-repeat;
+  background-position: center; */}
+  background-size: cover;
   display: block;
   text-align: center;
 `
