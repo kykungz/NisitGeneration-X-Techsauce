@@ -83,12 +83,16 @@ const Special = styled.span`
 
 const Place = styled.h2`
   margin-top: 0;
+  @media (max-width: 480px) {
+    padding: 0 .5em 10px .5em;
+    font-size: 20px;
+  }
 `
 
 const Date = styled.h1`
   @media (max-width: 480px) {
     padding: 0 .5em 10px .5em;
-    font-size: 40px;
+    font-size: 30px;
   }
 `
 

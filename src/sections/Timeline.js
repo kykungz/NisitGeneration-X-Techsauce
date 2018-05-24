@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+
+import form from '../assets/icons/form.svg'
+import announce from '../assets/icons/announce.svg'
+import pay from '../assets/icons/pay.svg'
 import background from '../assets/homebg3.jpg'
+
+const Yellow = styled.span`
+  color: #fcb03a;
+`
 
 const Center = styled.div`
   padding: 120px 0;
@@ -41,11 +49,9 @@ const Content = styled.div`
   margin-top: 2em;
 `
 
-const Circle = styled.div`
-  border-radius: 50%;
-  background: white;
-  width: 120px;
-  height: 120px;
+const Circle = styled.img`
+  max-width: 80px;
+  max-height: 80px;
   margin: 0 80px;
 `
 
@@ -55,28 +61,26 @@ const Detail = styled.div`
 
 const Timeline = () => (
   <Center>
-    {/* <div style={{ paddingTop: '120px' }}> */}
-      <h1><i>TIMELINE</i></h1>
-    {/* </div> */}
+    <h1><i>TIMELINE</i></h1>
     <List>
       <Content>
-        <Circle />
+        <Circle src={form} />
         <Detail>
-          <Text>กรอกใบสมัคร</Text>
+          <Text><Yellow>กรอกใบสมัคร</Yellow></Text>
           <Text>วันนี้ &mdash; 8 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
-        <Circle />
+        <Circle src={announce} />
         <Detail>
-          <Text>ประกาศผู้มีสิทธิเข้าร่วมงาน</Text>
+          <Text><Yellow>ประกาศผู้มีสิทธิเข้าร่วมงาน</Yellow></Text>
           <Text>10 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
-        <Circle />
+        <Circle src={pay} />
         <Detail>
-          <Text>ชำระเงินค่าเข้าร่วม</Text>
+          <Text><Yellow>ชำระเงินค่าเข้าร่วม</Yellow></Text>
           <Text>ภายใน 15 มิถุนายน 2561</Text>
         </Detail>
       </Content>

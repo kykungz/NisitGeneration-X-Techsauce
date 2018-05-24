@@ -11,6 +11,7 @@ const Yellow = styled.button`
   cursor: pointer;
   transition: all 300ms;
   padding: ${props => props.padding || '.5em'};
+  border-radius: 6px;
 
   &:hover {
     filter: brightness(.8);

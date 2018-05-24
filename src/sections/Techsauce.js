@@ -86,7 +86,7 @@ const Techsauce = () => (
         จะจัดขึ้นวันที่ 22 - 23 มื.ย.2561<br/>
         ณ Centara Grand and Bangkok Convention Centre, Central world
       </p> */}
-      <p>
+      {/* <p>
         ‘The Largest and Sexiest Global Tech Conferences in South East Asia’
       </p>
       <p>
@@ -106,6 +106,22 @@ const Techsauce = () => (
       <p>
         อ่านเพิ่มเติม :<br/>
         https://techsauce.co/events/techsauce-global-summit-2018/
+      </p> */}
+      <p>
+        Techsauce Global Summit 2018 คือ งานที่จะนำวงการเทคโนโลยีรุ่นใหม่เข้ามาแสดงทั้ง ผู้สร้างเทคโนโลยี ผู้ประกอบการ นักลงทุนต่างๆ และองค์กรระดับโลก ซึ่งทุกท่านที่เข้ามาในงานสามารถเข้าไปพูดคุยกับบูธต่างๆ เช่น Startup และ ธุรกิจ Tech ทั้งในและนอกประเทศ และรับฟังสัมมนาดีๆ มากมายทั้ง 10 เวที เช่น HealthTech, Startup, Venture Capital (VC), Blockchain & Cryptocurrency, Data Science & AI เรียกได้ว่าเป็นงานที่ผู้ประกอบการและผู้ที่สนใจด้านเทคโนโลยีต่างตั้งหน้าตั้งตารอเลยทีเดียว
+      </p>
+      <p>
+        โดยงานจะขึ้นในวันที่ 22 - 23 มิ.ย. 2561<br />
+        ณ Centara Grand and Bangkok Convention Centre, Central World
+      </p>
+      <p>
+        ทางทีมงาน Nisit Generation ของเราเห็นว่างานนี้เป็นโอกาสที่ดีสำหรับนิสิตนักศึกษาที่กำลังสนใจใน
+        เทคโนโลยี ธุรกิจ ยุคสมัยใหม่ คนที่ได้เข้างานจะได้เป็นการเปิดโลกมองเห็นภาพรวมโลกธุรกิจปัจจุบัน
+        บริษัทต่างๆ ทั้งในและต่างประเทศว่าเป็นอย่างไรกันแล้ว
+      </p>
+      <p>
+        ซึ่งทาง Nisit Generation ของเรานั้นได้รับสิทธิพิเศษในการจัดจำหน่ายบัตรนักศึกษาราคา
+        {' '}<b><u>800</u></b> บาท​ ที่เดียวในประเทศไทย!
       </p>
     </Detail>
     <Infographic>

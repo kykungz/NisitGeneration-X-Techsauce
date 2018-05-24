@@ -45,10 +45,12 @@ const Map = () => (
   <Wrapper>
     <Content>
       <div>
-        <h2 style={{textAlign:'center', fontWeight:'lighter'}}>Centara Grand at Central World</h2>
+        <h2 style={{ textAlign: 'center', fontWeight: 'lighter' }}>
+          Centara Grand at Central World
+        </h2>
         <Location
           title="Centara Grand at Central World"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.3537359105035!2d100.55768471466315!3d13.81778519030476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c159e3544e3%3A0x709a5bb981c416ef!2sCentara+Grand+at+Central+Plaza+Ladprao+Bangkok!5e0!3m2!1sth!2sth!4v1526064629883"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5161693171212!2d100.53655831466236!3d13.747716990350138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2992f7809567f%3A0xccc050cff0e7d234!2sCentara+Grand+at+CentralWorld!5e0!3m2!1sth!2sth!4v1527187705162"
           width="100%"
           height="350"
           frameBorder="0"
