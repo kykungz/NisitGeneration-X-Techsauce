@@ -122,7 +122,7 @@ const Techsauce = () => (
         ซึ่งทาง Nisit Generation ของเรานั้นได้รับสิทธิพิเศษในการจัดจำหน่ายบัตรนักศึกษาราคา <b><u>800</u></b> บาท​ ที่เดียวในประเทศไทย!
       </p>
       <p>
-        อ่านข้อมูลเพิ่มเติมได้ที่: <a target="_blank" rel="noopener noreferrer" href="https://techsauce.co/events/techsauce-global-summit-2018/">https://techsauce.co/events/techsauce-global-summit-2018/</a>
+        อ่านข้อมูลเพิ่มเติมได้ที่: <a style={{ color: '#fcb03a' }} target="_blank" rel="noopener noreferrer" href="https://techsauce.co/events/techsauce-global-summit-2018/">https://techsauce.co/events/techsauce-global-summit-2018/</a>
       </p>
     </Detail>
     <Infographic>
