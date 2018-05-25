@@ -104,8 +104,7 @@ const Techsauce = () => (
         ณ Centara Grand and Bangkok Convention Centre, Central world
       </p>
       <p>
-        อ่านเพิ่มเติม :<br/>
-        https://techsauce.co/events/techsauce-global-summit-2018/
+
       </p> */}
       <p>
         Techsauce Global Summit 2018 คือ งานที่จะนำวงการเทคโนโลยีรุ่นใหม่เข้ามาแสดงทั้ง ผู้สร้างเทคโนโลยี ผู้ประกอบการ นักลงทุนต่างๆ และองค์กรระดับโลก ซึ่งทุกท่านที่เข้ามาในงานสามารถเข้าไปพูดคุยกับบูธต่างๆ เช่น Startup และ ธุรกิจ Tech ทั้งในและนอกประเทศ และรับฟังสัมมนาดีๆ มากมายทั้ง 10 เวที เช่น HealthTech, Startup, Venture Capital (VC), Blockchain & Cryptocurrency, Data Science & AI เรียกได้ว่าเป็นงานที่ผู้ประกอบการและผู้ที่สนใจด้านเทคโนโลยีต่างตั้งหน้าตั้งตารอเลยทีเดียว
@@ -120,8 +119,10 @@ const Techsauce = () => (
         บริษัทต่างๆ ทั้งในและต่างประเทศว่าเป็นอย่างไรกันแล้ว
       </p>
       <p>
-        ซึ่งทาง Nisit Generation ของเรานั้นได้รับสิทธิพิเศษในการจัดจำหน่ายบัตรนักศึกษาราคา
-        {' '}<b><u>800</u></b> บาท​ ที่เดียวในประเทศไทย!
+        ซึ่งทาง Nisit Generation ของเรานั้นได้รับสิทธิพิเศษในการจัดจำหน่ายบัตรนักศึกษาราคา <b><u>800</u></b> บาท​ ที่เดียวในประเทศไทย!
+      </p>
+      <p>
+        อ่านข้อมูลเพิ่มเติมได้ที่: <a target="_blank" rel="noopener noreferrer" href="https://techsauce.co/events/techsauce-global-summit-2018/">https://techsauce.co/events/techsauce-global-summit-2018/</a>
       </p>
     </Detail>
     <Infographic>
@@ -135,11 +136,17 @@ const Techsauce = () => (
       </Point>
       <Point>
         <Icon src={ticket} alt=""/>
-        <Yellow><Text>บัตรเริ่มต้นที่ราคา 4,800 บาท</Text></Yellow>
+        <Yellow><Text>บัตรทั่วไปเริ่มต้นที่ 4,800 บาท</Text></Yellow>
       </Point>
       <Point>
         <Icon src={tag} alt=""/>
-        <Yellow><Text>สิทธิพิเศษสำหรับ Nisit Generation 800 บาท</Text></Yellow>
+        <Yellow>
+          <Text>
+            สิทธิพิเศษสำหรับ{' '}
+            <span style={{ whiteSpace: 'nowrap' }}>Nisit Generation</span>
+            {' '}800 บาท
+          </Text>
+        </Yellow>
       </Point>
     </Infographic>
   </Wrapper>

@@ -43,6 +43,12 @@ export default {
             <title>Nisit Generation</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta property="og:url" content="http://nisitgeneration.com" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Nisit Generation x Techsauce Global Summit 2018" />
+            <meta property="og:description" content="รับบัตรเข้างาน Techsauce Global Summit 2018 ในราคาพิเศษ สำหรับนิสิตนักศึกษาเท่านั้น!" />
+            <meta property="og:image" content="./preview.jpg" />
+            <link rel="icon" href="./favicon.png" />
             {renderMeta.styleTags}
           </Head>
           <Body>

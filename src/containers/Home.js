@@ -23,11 +23,11 @@ export default () => (
     </Element>
     {/* <Info /> */}
     {/* <SpeakerList /> */}
-    <Element name="ticket">
-      <Price />
-    </Element>
     <Element name="timeline">
       <Timeline />
+    </Element>
+    <Element name="ticket">
+      <Price />
     </Element>
     <Element style={{
       background: 'linear-gradient(to bottom, #111111, #202020)',

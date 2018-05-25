@@ -92,7 +92,7 @@ const Place = styled.h2`
 const Date = styled.h1`
   @media (max-width: 480px) {
     padding: 0 .5em 10px .5em;
-    font-size: 30px;
+    font-size: 26px;
   }
 `
 
