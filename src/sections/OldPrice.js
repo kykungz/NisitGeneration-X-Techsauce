@@ -116,7 +116,7 @@ const OldPrice = () => (
           <Logo src={tsLogo} />
         </div>
         <Sale>
-          <Full>Standard <del>4,800 บาท</del></Full>
+          <Full>Standard <del>11,500 บาท</del></Full>
           <Promotion><font size='6'>นักศึกษา</font> 800 <font size='6'>บาท</font></Promotion>
           <div style={{ fontSize: '16px', color: 'white', marginTop: '-6px', paddingBottom: '1em' }}>
             *จำนวนจำกัดเพียง 100 ใบ

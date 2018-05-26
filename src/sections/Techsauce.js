@@ -136,7 +136,7 @@ const Techsauce = () => (
       </Point>
       <Point>
         <Icon src={ticket} alt=""/>
-        <Yellow><Text>บัตรทั่วไปเริ่มต้นที่ 4,800 บาท</Text></Yellow>
+        <Yellow><Text>บัตรทั่วไปเริ่มต้นที่ 11,500 บาท</Text></Yellow>
       </Point>
       <Point>
         <Icon src={tag} alt=""/>

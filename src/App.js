@@ -23,7 +23,7 @@ injectGlobal`
   }
 
   p {
-    color: #dddddd !important;
+    color: #f2f2f2 !important;
     font-size: 19px;
     font-family: sans-serif;
   }
