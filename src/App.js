@@ -4,6 +4,7 @@ import { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 import Sidebar from 'react-sidebar'
+import ReactGA from 'react-ga'
 
 import SidebarContent from './sections/SidebarContent'
 import Navbar from './components/Navbar'
@@ -36,6 +37,11 @@ injectGlobal`
 class App extends Component {
   state = {
     sidebar: false,
+  }
+
+  componentDidMount () {
+    ReactGA.initialize('UA-119901391-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
   handleClick = () => {
