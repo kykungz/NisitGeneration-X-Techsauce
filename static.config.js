@@ -38,6 +38,9 @@ src="https://www.facebook.com/tr?id=185333372124241&ev=PageView&noscript=1"
 />
 `
 
+const pixelViewContent = `
+fbq('track', 'ViewContent');
+`
 export default {
   getSiteData: () => ({
     title: 'React Static',
@@ -84,8 +87,7 @@ export default {
             <Fragment>
               <div id="fb-root" />
               <script dangerouslySetInnerHTML={{ __html: facebook }} />
-              {/* <script dangerouslySetInnerHTML={{ __html: pixel }} />
-              <noscript dangerouslySetInnerHTML={{ __html: pixelNoScript }} /> */}
+              <script dangerouslySetInnerHTML={{ __html: pixelViewContent }} />
               {children}
             </Fragment>
           </Body>
