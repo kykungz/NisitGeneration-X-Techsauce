@@ -11,6 +11,33 @@ const facebook = `
 }(document, 'script', 'facebook-jssdk'));
 `
 
+const pixel = `
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '185333372124241', {
+  'em': 'pixel_email',
+  'fn': 'pixel_firstname',
+  'ln': 'pixel_lastname',
+  'ph': 'pixel_tel',
+  'ge': 'pixel_gender',
+  'db': 'pixel_birth',
+  'ct': 'pixel_city',
+});
+fbq('track', 'PageView');
+`
+
+const pixelNoScript = `
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=185333372124241&ev=PageView&noscript=1"
+/>
+`
+
 export default {
   getSiteData: () => ({
     title: 'React Static',
@@ -49,12 +76,16 @@ export default {
             <meta property="og:description" content="รับบัตรเข้างาน Techsauce Global Summit 2018 ในราคาพิเศษ สำหรับนิสิตนักศึกษาเท่านั้น!" />
             <meta property="og:image" content="./preview.jpg" />
             <link rel="icon" href="./favicon.png" />
+            <script dangerouslySetInnerHTML={{ __html: pixel }} />
+            <noscript dangerouslySetInnerHTML={{ __html: pixelNoScript }} />
             {renderMeta.styleTags}
           </Head>
           <Body>
             <Fragment>
               <div id="fb-root" />
               <script dangerouslySetInnerHTML={{ __html: facebook }} />
+              {/* <script dangerouslySetInnerHTML={{ __html: pixel }} />
+              <noscript dangerouslySetInnerHTML={{ __html: pixelNoScript }} /> */}
               {children}
             </Fragment>
           </Body>
