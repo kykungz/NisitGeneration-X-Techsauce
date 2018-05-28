@@ -70,7 +70,7 @@ export default {
             <title>Nisit Generation</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="description" content="รวมบทความ ข่าวสาร โปรโมชั่น สำหรับนิสิต นักศึกษา">
+            <meta name="description" content="รวมบทความ ข่าวสาร โปรโมชั่น สำหรับนิสิต นักศึกษา" />
 
             <meta property="og:url" content="http://nisitgeneration.com" />
             <meta property="og:type" content="website" />
