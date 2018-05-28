@@ -38,9 +38,6 @@ src="https://www.facebook.com/tr?id=185333372124241&ev=PageView&noscript=1"
 />
 `
 
-const pixelViewContent = `
-fbq('track', 'ViewContent');
-`
 export default {
   getSiteData: () => ({
     title: 'React Static',
@@ -73,12 +70,16 @@ export default {
             <title>Nisit Generation</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="description" content="รวมบทความ ข่าวสาร โปรโมชั่น สำหรับนิสิต นักศึกษา">
+
             <meta property="og:url" content="http://nisitgeneration.com" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Nisit Generation x Techsauce Global Summit 2018" />
             <meta property="og:description" content="รับบัตรเข้างาน Techsauce Global Summit 2018 ในราคาพิเศษ สำหรับนิสิตนักศึกษาเท่านั้น!" />
             <meta property="og:image" content="./preview.jpg" />
+
             <link rel="icon" href="./favicon.png" />
+
             <script dangerouslySetInnerHTML={{ __html: pixel }} />
             <noscript dangerouslySetInnerHTML={{ __html: pixelNoScript }} />
             {renderMeta.styleTags}
@@ -87,7 +88,6 @@ export default {
             <Fragment>
               <div id="fb-root" />
               <script dangerouslySetInnerHTML={{ __html: facebook }} />
-              <script dangerouslySetInnerHTML={{ __html: pixelViewContent }} />
               {children}
             </Fragment>
           </Body>
