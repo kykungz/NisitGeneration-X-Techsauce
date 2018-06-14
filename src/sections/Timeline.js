@@ -41,7 +41,7 @@ const Text = styled.h3`
   text-align: center;
   margin: 0;
   line-height: 2rem;
-  ${'' /* font-family: sans-serif; */}
+  ${''}
   font-weight: normal
 `
 
@@ -67,21 +67,21 @@ const Timeline = () => (
         <Circle src={form} />
         <Detail>
           <Text><Yellow>กรอกใบสมัคร</Yellow></Text>
-          <Text>วันนี้ &mdash; 8 มิถุนายน 2561</Text>
+          <Text>วันนี้ &mdash; 15 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
         <Circle src={announce} />
         <Detail>
           <Text><Yellow>ประกาศผู้มีสิทธิเข้าร่วมงาน</Yellow></Text>
-          <Text>10 มิถุนายน 2561</Text>
+          <Text>16 มิถุนายน 2561</Text>
         </Detail>
       </Content>
       <Content>
         <Circle src={pay} />
         <Detail>
           <Text><Yellow>ชำระเงินค่าเข้าร่วม</Yellow></Text>
-          <Text>ภายใน 15 มิถุนายน 2561</Text>
+          <Text>ภายใน 18 มิถุนายน 2561</Text>
         </Detail>
       </Content>
     </List>
